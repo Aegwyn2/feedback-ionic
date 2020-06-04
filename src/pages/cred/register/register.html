@@ -1,0 +1,19 @@
+
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Register Step 1
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content id="register_content">	
+	<div id="page_main">
+		<ion-item>
+     		<ion-input id="input_email" placeholder="Your email" [(ngModel)]="email"></ion-input>
+     	</ion-item>
+ 		<button ion-button id="button_register" [disabled]="!email" (click)="toRegister2()">
+			Register
+		</button>
+	</div>
+</ion-content>

@@ -1,0 +1,33 @@
+
+<div id="complaint_pages_group">
+        <div id="area_editmode"[hidden]="!(currentView == 'complaint')">
+            <label id="label_edit">Edit Mode</label>
+            <ion-toggle id="toggle_edit" [(ngModel)]="editMode"></ion-toggle>
+        </div>
+	<complaint-page #complaintPage 
+			 (onBoard)="onBoardEvent($event)"
+                         (onNewBoard)="showNewBoard()" 
+                         [hidden]="!(currentView == 'complaint')">
+	</complaint-page>
+
+	<newboard-page #newBoardPage 
+	             [hidden]="!(currentView == 'newboard')" 
+	             [boardType]="'complaint'" 
+	             (onCancel)="showComplaint()" 
+	             (onOkay)="showComplaint()"> 
+	</newboard-page>
+    
+        <fillcomplaint-page #fillComplaintPage 
+	             [hidden]="!(currentView == 'fillcomplaint')"
+                     (onFillCustomer)="currentView = 'fillcustomer' "
+	             (onCancel)="showComplaint()" 
+	             (onOkay)="showComplaint()"> 
+	</fillcomplaint-page>
+    
+        <fillcustomer-page #fillCustomerPage 
+                     [radioName]="'filllcomplaintcustomer'"
+	             [hidden]="!(currentView == 'fillcustomer')"
+	             (onCancel)="currentView = 'fillcomplaint'"
+                     (onOkay)="setCustomer($event)"> 
+	</fillcustomer-page>
+</div>

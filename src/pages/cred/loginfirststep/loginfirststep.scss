@@ -1,0 +1,32 @@
+#loginfirststep_content_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ion-item {
+        width: 90%;
+        margin: 1%;
+    }
+
+    #page_main {
+        display: flex;
+        flex-direction: column;
+        flex-grow:1;
+        justify-content: center;    
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+
+    #input_email { 
+        width: 100% ;
+    }
+
+    #button_next { 
+        width: 90% ;
+        margin: 1% ;
+        text-align: center ;
+    }
+}

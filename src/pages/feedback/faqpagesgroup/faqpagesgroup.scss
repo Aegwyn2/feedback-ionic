@@ -1,0 +1,24 @@
+
+#faq_pages_group {
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+	faq-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+
+	newboard-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+}

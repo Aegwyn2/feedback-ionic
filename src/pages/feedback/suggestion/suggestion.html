@@ -1,0 +1,21 @@
+
+	<div id="suggestion_page_main">
+            <div id="list_container">
+		<ion-grid id="suggestion_list" [hidden]="isLoading">
+			<ion-row *ngFor="let boards of listBoards">
+			  <ion-col><button ion-button (click)="onBoardClicked(boards[0])"> {{boards[0].name}} </button></ion-col>
+			  <ion-col>
+				  <button ion-button *ngIf="boards[1]" (click)="onBoardClicked(boards[1])"> 
+				  	{{boards[1].name}}
+				  </button>
+			  </ion-col>
+			</ion-row>
+		</ion-grid>
+            </div>
+                <img id="img_loading" src="img/loading.gif" [hidden]="!isLoading" />
+		<div id="footer">
+			<button ion-button id="button_new_board" (click) ="newBoardClicked()">
+	          New Board (only management)
+	        </button>
+        </div>
+	</div>

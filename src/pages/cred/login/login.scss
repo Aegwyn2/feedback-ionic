@@ -1,0 +1,41 @@
+
+#login_content_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ion-item {
+        width: 90%;
+        margin: 1%;
+    }
+
+    #login_page_main {
+        display: flex;
+        flex-direction: column;
+        flex-grow:1;
+        justify-content: center;    
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #text_header { 
+        text-align: right;
+        margin: 1% ;
+    }
+
+    #input_email { 
+        width: 100% ;
+    }
+
+    #input_password { 
+        width: 100% ;
+    }
+
+    #button_signin { 
+        width: 90% ;
+        margin: 1% ;
+        text-align: center ;
+    }
+}

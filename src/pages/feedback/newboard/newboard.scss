@@ -1,0 +1,35 @@
+#new_board_page_main {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+	border: 1px dashed green;
+
+    ion-item {
+        margin: 1%;
+    }
+
+    #item_content {
+        flex-grow: 1;
+    }
+
+    #txa_content {
+        height: 100%;
+    }
+
+    #area_buttons {
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 1%;
+
+        #button_delete {
+            background-color: red;
+        }
+    }
+}

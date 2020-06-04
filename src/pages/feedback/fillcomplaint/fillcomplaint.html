@@ -1,0 +1,37 @@
+<div id="fillcomplaint_page_main">
+    <div id="row_upper">
+        <button ion-button id="button_complaint"> {{board.name}} </button> 
+        <ion-icon id="icon_customer" name="people" (click)="fillCustomer()"></ion-icon>
+    </div>
+	<i id="icon_customer" class = "icon icon ion-star"></i>
+	<div id="name_customer"> {{customer ? customer.fullName : 'Select customer'}} </div>
+	<div id="taging" > Taging </div>
+	<div id="icons">
+		<ion-icon name="sad"></ion-icon>
+		<ion-icon name="sad"></ion-icon>
+		<ion-icon name="sad"></ion-icon>
+		<ion-icon name="sad"></ion-icon>
+		<ion-icon name="sad"></ion-icon>
+	</div><!--
+-->	<div id="item_content">
+            <ion-textarea rows="6" id="txa_content" placeholder="Content(memo)" [(ngModel)]="feedbackContent"></ion-textarea>
+        </div>
+        <div id="row_choices">
+            <div id="col_feedbackCall">
+                <ion-label id="label_feedbackCall">Feedback Call </ion-label>
+                <ion-checkbox [(ngModel)]="feedbackCall"></ion-checkbox>
+            </div>
+            <div id="col_urgentCall">
+                <ion-label id="label_urgentCall">Urgent Call </ion-label>
+                <ion-checkbox [(ngModel)]="urgentCall">Urgent</ion-checkbox>
+            </div>
+        </div>
+        <ion-row id="row_buttons">
+            <ion-col>
+                <button ion-button id="button_cancel" (click)="cancel()"> Cancel </button>
+            </ion-col>
+            <ion-col>
+                <button ion-button id="button_ok" (click)="save()"> Ok </button>
+            </ion-col>
+        </ion-row>
+</div>

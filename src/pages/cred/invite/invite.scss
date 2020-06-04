@@ -1,0 +1,57 @@
+#invite_content {
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;*/
+
+	#page_main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+	 	align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	#form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+	 	align-items: center;
+		width: 100%;
+	}
+
+	#add_header {
+		width: 100%;
+		text-align: right;
+	}
+
+	#register_footer {
+		width: 100%;
+		text-align: right;
+	}
+
+	.email {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;	
+	 	align-items: center;		
+	 	width: 75%;
+	}
+
+	ion-item {
+		flex-grow: 1;
+		margin: 1%;
+	}
+
+	#button_delete {
+		margin: 1%;
+	}
+
+	#button_add {
+		margin: 1%;
+	}
+
+	#button_register {
+		margin: 1%;
+	}
+}

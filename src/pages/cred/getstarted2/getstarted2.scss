@@ -1,0 +1,28 @@
+#getstarted2_content_main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+
+	#page_main {
+	    display: flex;
+		flex-direction: column;
+	    flex-grow:1;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		border: 2px solid black;	
+		text-align: center;
+	}
+
+	#button_join {
+		margin: 1%;
+		width: 60%;
+	}
+
+	#button_register {
+		margin:1%;
+		width: 60%;
+	}
+}
+

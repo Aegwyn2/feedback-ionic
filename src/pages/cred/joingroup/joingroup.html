@@ -1,0 +1,16 @@
+	
+	<ion-header>
+          <ion-navbar>
+            <ion-title>
+              Join Group
+            </ion-title>
+          </ion-navbar>
+        </ion-header>
+
+	<ion-content id="joingroup_content">	
+		<div id="page_main">
+			<button ion-button *ngFor="let tenant of tenants" (click)="toCreateProfile(tenant)">
+					{{tenant.companyName}}
+			</button>
+		</div>
+	</ion-content>

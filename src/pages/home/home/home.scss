@@ -1,0 +1,143 @@
+
+#home_content_main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+	#page_main {
+	    display: flex !important;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    width: 100%;
+	    text-align: center;
+	}
+        
+        #area_buttons {
+		margin: 1%;
+		margin-bottom: 0px;
+		text-align: center;
+
+		button {
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+                    margin: 0px;
+                    border: 1px solid black;
+		}
+	}
+
+	#header {
+	    width: 100%;
+            position: relative;
+	    margin: 1% !important;
+            vertical-align: middle;
+	}
+
+	#button_boards {
+	    display: inline-block;
+	    float:left !important;
+	    margin: 1%;
+	}
+
+	#right_header {
+            display: inline-block;
+            float:right;
+            /*width: 60%;*/
+	    /*margin: 1%;*/
+	    padding: 0px;
+            /*border: 1px dotted red;*/
+	}
+        
+/*        #container_profile {
+            display: inline-block;
+            float:right;
+            width: 25%;
+	}*/
+        
+        #panel_profile {
+            position: absolute;
+            width: 25%;
+            right: 0;
+            top: 1.5em;
+            background-color: black;
+            z-index: 1;
+        }
+
+	#button_inbox {
+	    display: inline-block;
+	    margin: 0px;
+	    vertical-align: middle;		   /*harus ada agar element di sebelahnya bisa di vertical center */
+	}
+
+	#button_invite {
+	    display: inline-block;
+	    margin: 0px;
+	    vertical-align: middle; 
+	}
+
+	#text_user {
+	    display: inline-block;
+            float: right;
+            margin: 1%;
+            /*border: 1px dotted blue;*/
+	    vertical-align: middle;
+	}
+        
+        #link_profile, #link_logout {
+            color: white;
+        }
+
+	ion-item {
+		width: 90%;
+		margin: 1%;
+	}
+
+	#input_search { 
+	    width: 100% ;
+	}
+
+	#area_bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		width: 100%;
+	}
+
+	faq-pages-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+        
+        complaint-pages-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+        
+        suggestion-pages-group {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+}
+
+.tab_selected {
+	background-color: white;
+	color: black;
+}
+

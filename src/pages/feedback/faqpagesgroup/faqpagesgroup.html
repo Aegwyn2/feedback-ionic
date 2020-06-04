@@ -1,0 +1,15 @@
+
+<div id="faq_pages_group">
+	<faq-page #faqPage 
+			  (onBoard)="showDetail($event)"
+	          (onNewBoard)="showNewBoard()" 
+	          [hidden]="!(currentView == 'faq')">
+	</faq-page>
+
+	<newboard-page #newBoardPage 
+	             [hidden]="!(currentView == 'newboard')" 
+	             [boardType]="'faq'" 
+	             (onCancel)="showFAQ()" 
+	             (onOkay)="showFAQ()"> 
+	</newboard-page>
+</div>

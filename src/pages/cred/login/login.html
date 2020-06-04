@@ -1,0 +1,25 @@
+  
+    <ion-header>
+      <ion-navbar>
+          <ion-title>
+              Sign In
+          </ion-title>
+      </ion-navbar>
+  </ion-header>
+
+  <ion-content id="login_content_main" class="padding">		
+      <div id="text_header">
+          {{'Welcome ' + companyName}}
+      </div>
+      <div id="login_page_main">
+          <ion-item>
+              <ion-input id="input_email" type="email" placeholder="Your email" [(ngModel)]="email"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-input id="input_password" type="password" placeholder="Your password" [(ngModel)]="password"></ion-input>
+          </ion-item>
+          <button ion-button id="button_signin" [disabled]="(!email) || (!password)" (click)="login()">
+              Sign In
+          </button>
+      </div>
+  </ion-content>

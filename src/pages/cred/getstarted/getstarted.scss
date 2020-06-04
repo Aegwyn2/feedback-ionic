@@ -1,0 +1,41 @@
+
+#getstarted_content_main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	ion-item {
+		width: 90%;
+	}
+
+	#page_main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+	 	align-items: center;
+		height: 100%;
+		width: 100%;
+		text-align: center;
+		border: 2px solid black;
+	}
+
+	#input_email {
+		width: 100%;
+		margin: 1%;
+	}
+
+	#button_register {
+		display: inline-block;
+		margin:1%;
+	}
+
+	#button_login {
+		display: inline-block;
+		margin:1%;
+	}
+
+	#link_login {
+		display: inline-block;
+		margin: 1%;
+	}
+}

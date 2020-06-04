@@ -1,0 +1,51 @@
+#infodialog_page_main {
+    background-color: rgba(192,192,192, 0.5);
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    
+    #container {
+        background-color: rgba(255,255,255,1);
+        color: black;
+        opacity: 1;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        /*height: 40%;*/
+        width: 100%;
+        border: 3px solid darkblue;
+        margin-top: 60%;
+        animation-name: animate;
+        animation-duration: 1s;
+    }
+        
+    #title_area {
+        text-align: center;
+    	border: 1px solid black;
+        text-align: center;
+    }
+    
+    #message_area {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1%;
+    	border: 1px solid black;
+        text-align: center;
+        word-wrap:break-word;
+    }
+    
+    #button_ok {
+        display: inline-block;
+        float: right;
+        margin-right: 1%;
+        border: 1px solid black;
+    }
+    
+    @keyframes animate {
+        from {margin-top: 0}
+        to {margin-top:60%}
+    }
+}

@@ -1,0 +1,31 @@
+	
+	<ion-header>
+		<ion-navbar>
+			<ion-title>
+				Get Started
+			</ion-title>
+		</ion-navbar>
+	</ion-header>
+	
+	<ion-content id="getstarted_content_main">	
+            <div id="page_main">
+                    <button id="button_register" ion-button (click)="toRegister()">
+                            Create New
+                    </button>
+                     <!-- <label id="label_email"> -->
+                     <ion-item>
+                             <ion-input id="input_email" placeholder="Email" [(ngModel)]="email"></ion-input>
+                     </ion-item>
+                     <!-- </label>  -->
+                     <button id="button_start" ion-button [disabled]="!email" 
+                            (click)="toGetStarted2()">
+                                    Get Started
+                     </button>
+                     <a id="link_login" (click)="toLogin()"> Sign In </a>
+            </div>
+<!--            <input type="file" (change)="fileChange($event)" placeholder="Upload file" accept=".pdf,.doc,.docx">
+            <button  
+                (click)="upload()">
+                        Upload
+            </button>	-->
+        </ion-content>

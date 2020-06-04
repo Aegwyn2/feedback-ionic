@@ -1,0 +1,47 @@
+<div id="fillcustomer_page_main">
+     <!--<ion-item>-->
+    <input id="input_nama" type="text" placeholder="Nama" [(ngModel)]="name">
+     <!--</ion-item>-->
+    <!--<ion-item>-->
+    <input id="input_no_hp" type="text" placeholder="No HP" [(ngModel)]="noHp">
+     <!--</ion-item>-->
+     <!--<div id="wrapper_label_warning">-->
+    <label id="label_warning">*No HP harus diisi kalau membutuhkan feedback call</label>
+     <!--</div>-->
+    <div id="row_genders">
+        <div id="col_male"> 
+            <input type="radio" [name]="radioName" id="radio_male" [value]="0" [(ngModel)]="gender">
+            <label for="male" id="label_male">Pria</label>
+       </div>
+        <div id="col_female"> 
+            <input type="radio" [name]="radioName" id="radio_female" [value]="1" [(ngModel)]="gender">
+            <label for="female" id="label_female">Wanita</label>
+       </div>
+    </div>
+  
+    <input id="input_umur" type="text" placeholder="Umur" [(ngModel)]="age">
+    <div id="row_country">
+        <label id="label_country" for="select_country">Negara:</label>
+        <select name="select_country" id="select_country"[(ngModel)]="country">
+          <option value="Amerika">Amerika</option>
+          <option value="Australia">Australia</option>
+          <option value="Indonesia">Indonesia</option>
+        </select>
+    </div>
+    <div id="row_city">
+        <label id="label_city" for="select_city">Kota:</label>
+        <select name="select_city" id="select_city" [(ngModel)]="city">
+          <option value="Bandung">Bandung</option>
+          <option value="Jakarta">Jakarta</option>
+          <option value="Surabaya">Surabaya</option>
+        </select>
+    </div>
+    <div id="row_buttons">
+        <ion-col>
+            <button ion-button id="button_cancel" (click)="cancel()"> Cancel </button>
+        </ion-col>
+        <ion-col>
+            <button ion-button id="button_ok" (click)="save()"> Ok </button>
+        </ion-col>
+    </div>
+</div>

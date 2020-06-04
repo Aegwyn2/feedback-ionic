@@ -1,0 +1,58 @@
+
+#suggestion_pages_group {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+        #area_editmode {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+        }
+                
+        #label_edit {
+            font-size: 0.5em;
+        }
+    
+        #toogle_edit {
+            $toggle-md-track-width: 8px;;
+            $toggle-ios-width: 8px;
+            border: 1px dotted black;
+        }
+
+	suggestion-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+
+	newboard-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+        
+        fillsuggestion-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+        
+        fillcustomer-page {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;		
+		height: 100%;
+		width: 100%;
+	}
+}

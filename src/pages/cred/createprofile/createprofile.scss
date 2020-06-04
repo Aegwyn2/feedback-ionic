@@ -1,0 +1,31 @@
+#createprofile_content {
+	/*display: flex;
+	flex-direction: column;*/
+
+	#page_main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;	
+		height: 100%;
+		width: 100%;
+	}
+
+	#form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;	
+	 	align-items: center;
+	 	width: 80%;
+		border: 1px dotted blue;
+	}
+
+	ion-item {
+		margin: 1%;
+	}
+
+	#footer {
+		width: 100%;
+		text-align: right;
+	}	
+}

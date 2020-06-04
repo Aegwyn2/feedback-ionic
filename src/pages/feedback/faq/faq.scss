@@ -1,0 +1,57 @@
+/*#faq_content_main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+	#page_main {
+	    display: flex !important;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    height: 100%;
+	    width: 100%;
+	    border: 2px solid black;
+	    text-align: center;
+	}
+
+	button {
+		width: 90%;
+	}
+	
+}*/
+
+
+#faq_page_main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100;
+    text-align: center;
+    	border: 1px dotted blue;
+        
+    #list_container {
+        flex-grow: 1;
+    	border: 1px solid black;
+        overflow-y: scroll;
+    }
+        
+/*    #faq_list {
+    	
+    }*/
+    
+    #img_loading {
+        flex-grow: 1;
+        min-height: 0px;
+    }
+
+    #footer {
+    	text-align: center;
+    }
+
+    button {
+        width: 90%;
+    }
+}
+

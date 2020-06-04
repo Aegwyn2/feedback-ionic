@@ -1,0 +1,31 @@
+  		  
+
+        <ion-header>
+          <ion-navbar>
+            <ion-title>
+              Create Profile
+            </ion-title>
+          </ion-navbar>
+        </ion-header>
+
+        <ion-content id="createprofile_content">		
+          <div id="page_main">
+              <div id="form">
+                  <ion-item>
+                    <ion-input type="text" name="firstName" placeholder="first name" [(ngModel)]="firstName"> </ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="text" name="'lastName' + i" placeholder="last name" [(ngModel)]="lastName"> </ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="text" name="userName" placeholder="user name"  [(ngModel)]="userName"> </ion-input>
+                  </ion-item>
+                  <ion-item>
+                    <ion-input type="text" name="password" placeholder="password" [(ngModel)]="password"> </ion-input>
+                  </ion-item>
+                 <div id="footer">
+                    <button ion-button id="button_create" (click)="createProfile()">Create Profile </button>
+                 </div>  
+             </div>       			
+       		</div>
+  		  </ion-content>

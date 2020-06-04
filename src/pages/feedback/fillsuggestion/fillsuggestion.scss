@@ -1,0 +1,82 @@
+#fillsuggestion_page_main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100;
+    border: 1px dotted black;
+    
+    #row_upper {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 1%;
+       
+        #button_complaint {
+            font-size: 0.5em;
+            vertical-align: center;
+            
+        } 
+        #icon_customer {
+            font-size: 1.5em;
+            vertical-align: center;
+        }
+    }
+    
+    #name_customer {
+        font-size: 0.5em;
+        margin: 1%;
+    }
+    
+    #taging {
+        font-size: 0.5em;
+        margin: 1%;
+    }
+    
+    #icons {
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 1%;
+    }
+
+    #item_content {
+        display: flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    #txa_content {
+        font-size: 0.5em;
+        width: 90%;
+        border: 1px solid black;
+    }
+    
+    #row_choices {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #row_buttons {
+        width: 100%;
+    }
+        
+    #button_cancel {
+        font-size: 0.5em;
+    }
+    
+    #button_ok {
+        font-size: 0.5em;
+    }
+}

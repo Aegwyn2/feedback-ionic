@@ -1,0 +1,89 @@
+
+#fillcustomer_page_main {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100;
+    border: 1px dotted black;
+    
+    #input_nama, #input_no_hp, #input_umur {
+/*        flex-grow: 0;
+        height: 10%;*/
+        width: 75%;
+        margin: 1%;
+        /*font-size: 0.5em;*/
+        border: 1px dotted black;
+    }
+    
+    #input_umur {
+        width: 35%;
+    }
+    
+    #label_warning {
+        margin: 1%;
+        font-size: 0.5em;
+    }
+    
+    #row_genders, #row_country, #row_city {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 7.5%;
+        width: 100%;
+        margin: 1%;
+        /*border: 1px dotted red;*/
+    }  
+    
+    #col_male {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px dotted blue;
+        #label_male {
+            border: 1px dotted brown;
+        }
+        #radio_male {
+            border: 1px dotted red;
+        }
+    }
+    
+    #col_female {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border: 1px dotted blue;
+        #label_female {
+            border: 1px dotted brown;
+        }
+        #radio_female {
+            border: 1px dotted red;
+        }
+    }
+    
+    select {
+        
+    }
+    
+    #row_buttons {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+    
+    #button_cancel {
+        /*font-size: 0.5em;*/
+    }
+    
+    #button_ok {
+        /*font-size: 0.5em;*/
+    }
+}

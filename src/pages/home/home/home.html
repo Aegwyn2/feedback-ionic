@@ -1,0 +1,74 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Home
+      </ion-title>
+    </ion-navbar>
+  </ion-header>  
+
+  <ion-content id="home_content_main">
+      <div id="page_main" (click)="disableShowProfile()">
+          <div id="header">		
+              <button ion-button id="button_boards"> boards </button>
+<!--              <div id="container_profile">
+                
+                  
+              </div>-->
+              <div id="panel_profile" [hidden]="!showProfile">
+                      <a id="link_profile"> Profile </a> <br>
+                      <a id="link_logout" (click)="logout()"> Log out </a>
+                </div>
+              <div id="text_user">
+                      <a (click)="toogleProfile($event)"> {{userName}} </a>
+              </div>
+              <div id="right_header">
+                  <button ion-button id="button_inbox">Inbox</button>
+                  <button ion-button id="button_invite" (click)="toInvitePage()">Invite</button>
+              </div>
+          </div>
+
+
+            <ion-item>        
+              <ion-label> <ion-icon name="search"></ion-icon></ion-label>
+              <ion-input id="input_search" type="text"></ion-input>
+            </ion-item>
+
+            <div id="area_buttons"> 
+                <button ion-button 
+                           [ngClass]="{'tab_selected': currentView == 'faq'}" 
+                           id="button_faq" 
+                           (click) ="showFAQ()">
+                           FAQ
+                </button><!--
+             --><button ion-button 
+                           [ngClass]="{'tab_selected': currentView == 'complaint'}" 
+                           id="button_complaint" 
+                           (click) ="showComplaint()">
+                           Komplain
+                </button><!--
+             --><button ion-button 
+                           [ngClass]="{'tab_selected': currentView == 'suggestion'}" 
+                           id="button_suggestion" 
+                           (click) ="showSuggestion()">
+                           Saran
+                </button>
+            </div>
+
+          <!-- hanya sebagai pancingan karena ion-tabs menutup satu elemen di atasnya -->
+          <div id="area_bottom">
+              
+              <faq-pages-group #faqPagesGroup [hidden]="!(currentView == 'faq')">
+              </faq-pages-group>
+              
+              <complaint-pages-group #complaintPagesGroup [hidden]="!(currentView == 'complaint')">
+              </complaint-pages-group>
+              
+              <suggestion-pages-group #suggestionPagesGroup [hidden]="!(currentView == 'suggestion')">
+              </suggestion-pages-group>
+
+<!--              <faq-pages-group #faqPagesGroup *ngSwitchCase="'faq'">
+              </faq-pages-group>-->
+
+          </div>
+      </div>
+   </ion-content>

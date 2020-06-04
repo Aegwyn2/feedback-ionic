@@ -1,0 +1,15 @@
+<div id="new_board_page_main">
+  <ion-item>
+      <ion-input id="input_board_name" type="text" placeholder="Nama board" [(ngModel)]="boardName"></ion-input>
+  </ion-item>
+  <ion-item id="item_content">
+      <ion-textarea rows="10" id="txa_content" placeholder="Content(memo)" [(ngModel)]="boardContent"></ion-textarea>
+  </ion-item>
+  <div id="area_buttons">
+      <button ion-button id="button_cancel" (click)="cancel()"> Cancel </button>
+      <button ion-button id="button_delete" (click)="delete()"> Delete </button>
+      <button ion-button id="button_save" 
+              [disabled]="(!boardName) || (!boardContent)"
+              (click)="save()"> Ok </button>
+  </div>
+</div>

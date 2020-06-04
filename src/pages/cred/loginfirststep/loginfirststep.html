@@ -1,0 +1,20 @@
+	
+    <ion-header>
+            <ion-navbar>
+                    <ion-title>
+                            Login First Step
+                    </ion-title>
+            </ion-navbar>
+    </ion-header>
+
+    <ion-content id="loginfirststep_content_main">	
+            <div id="page_main">
+                <ion-item>
+                    <ion-input id="input_email" placeholder="Your company email" [(ngModel)]="companyName"></ion-input>
+                </ion-item>
+                <br/>
+                <button ion-button id="button_next" (click)="login()" [disabled]="!companyName">
+                    Next
+                </button>
+            </div>
+    </ion-content>

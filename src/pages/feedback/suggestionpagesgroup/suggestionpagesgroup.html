@@ -1,0 +1,35 @@
+
+<div id="suggestion_pages_group">
+                <!-- <ion-toggle id="toggle_edit"></ion-toggle> -->
+        <div id="area_editmode"[hidden]="!(currentView == 'suggestion')">
+            <label id="label_edit">Edit Mode</label>
+            <ion-toggle id="toggle_edit" [(ngModel)]="editMode"></ion-toggle>
+        </div>
+	<suggestion-page #suggestionPage 
+                  (onBoard)="onBoardEvent($event)"
+	          (onNewBoard)="showNewBoard()" 
+	          [hidden]="!(currentView == 'suggestion')">
+	</suggestion-page>
+                
+        <newboard-page #newBoardPage 
+	             [hidden]="!(currentView == 'newboard')" 
+	             [boardType]="'suggestion'" 
+	             (onCancel)="showSuggestion()" 
+	             (onOkay)="showSuggestion()"> 
+	</newboard-page>
+        
+        <fillsuggestion-page #fillSuggestionPage 
+	             [hidden]="!(currentView == 'fillsuggestion')"
+                     (onFillCustomer)="currentView = 'fillcustomer' "
+	             (onCancel)="showSuggestion()" 
+	             (onOkay)="showSuggestion()"> 
+	</fillsuggestion-page>
+    
+        <fillcustomer-page #fillCustomerPage 
+                     [radioName]="'filllsuggestioncustomer'"
+	             [hidden]="!(currentView == 'fillcustomer')"
+	             (onCancel)="currentView = 'fillsuggestion'"
+                     (onOkay)="setCustomer($event)"> 
+	</fillcustomer-page>
+                	
+</div>

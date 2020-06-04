@@ -1,0 +1,28 @@
+
+
+	<ion-header>
+		<ion-navbar>
+			<ion-title>
+				Get Started
+			</ion-title>
+		</ion-navbar>
+	</ion-header>
+	
+	<ion-content id="invite_content">	
+		<div id="page_main">
+			<div id="form">
+				<div id="add_header">
+			    	<button ion-button id="button_add" (click)="add()"> Add</button>
+			    </div>
+			    <div class="email" *ngFor="let email of emails; let i = index">
+				    <ion-item>
+				    	<ion-input type="text" name="'email.value' + i" [(ngModel)]="emails[i].value"> </ion-input>
+				    </ion-item>
+				    <button ion-button id= "button_delete" (click)="delete(i)"> X </button>
+			    </div>
+				<div id="register_footer">
+			    	<button ion-button id="button_register" (click)="invite()" [disabled]="!validateEmails()"> Invite </button>
+			    </div>
+		    </div>
+		</div>
+	</ion-content>

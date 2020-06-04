@@ -1,0 +1,25 @@
+#register_content {
+	
+	#page_main {
+		display: flex !important;
+	 	align-items: center!important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		height: 100%;
+	    border: 2px solid black;
+		text-align: center !important;
+	}
+
+	ion-item {
+ 		width: 90%;
+ 	}
+
+	#input_email {
+		width: 100%;
+		margin: 1%;
+	}
+
+	#button_register {
+		margin: 1%;
+	}
+}
